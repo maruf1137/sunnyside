@@ -1,0 +1,140 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 10rem;
+  position: relative;
+
+  @media only screen and (max-width: $medium) {
+    padding: 2rem 5rem;
+  }
+
+  &__logo-box {
+  }
+
+  &__logo {
+    font-size: 3.2rem;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    grid-column-gap: 2rem;
+    align-items: center;
+
+    @media only screen and (max-width: $medium) {
+      display: none;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.4s;
+
+    &:hover {
+      color: #2b2b2b;
+    }
+  }
+
+  .btn-contact {
+    font-size: 2.5rem;
+
+    &:hover {
+      background-color: #3ebfff;
+      color: #fff;
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #3EBFFF;
+  width: 100%;
+  z-index: 2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px;
+}
+
+.mobile-menu {
+  position: relative;
+  display: none;
+
+  @media only screen and (max-width: $medium) {
+    display: block;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    color: #fff;
+    position: fixed;
+    top: 1.7rem;
+    right: 3.5rem;
+    z-index: 2;
+  }
+
+  &__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    // background-color: #949494;
+    background-image: linear-gradient(to bottom right, #0d618b, #3EBFFF);
+    color: #fff;
+    height: 100%;
+    z-index: 3;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 1rem;
+    margin-top: -5rem;
+    width: 50%;
+    transform: translateX(-100%);
+    transition: all 0.4s cubic-bezier(.86,.49,.83,.67);
+
+    @media only screen and (max-width: $small) {
+      width: 100%;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 6rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-size: 4.2rem;
+    color: #fff;
+    padding: 0.5rem 4rem;
+    // border: 1px solid red;
+    background-image: linear-gradient(100deg, #fff 50%, transparent 50%);
+    background-size: 220%;
+    background-position: 100%;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(.86,.49,.83,.67);
+    
+    &:hover {
+      background-position: 0;
+      transform: translateX(1rem);
+      color: #3ebfff;
+    }
+  }
+}
+
+
+
+// git config --global user.email "mmaruf1137@gmail.com"
+// git config --global user.name "maruf1137"

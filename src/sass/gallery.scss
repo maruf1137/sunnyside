@@ -1,0 +1,14 @@
+.gallery-secion {
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+  &__item {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

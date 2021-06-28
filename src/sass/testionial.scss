@@ -1,0 +1,34 @@
+.testimonial-section {
+  padding: 8rem 0;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  text-align: center;
+  grid-gap: 4rem 2rem;
+
+  &__item {
+    img {
+      border-radius: 50%;
+      margin-bottom: 2rem;
+      height: 10rem;
+      width: 10rem;
+    }
+  }
+
+  .p-text{
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+  }
+
+  &__name{
+    font-size: 2.4rem;
+    // margin-bottom: 2rem;
+  }
+
+  &__label{
+    font-size: 1.6rem;
+  }
+}
